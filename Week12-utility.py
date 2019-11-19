@@ -4,3 +4,10 @@
 
 def PrintOutput(string):
     print("OUTPUT %s" % (string))
+
+def LoadFile(filename):
+    bruh = open(filename, "r")
+    contents = bruh.read()
+    new = contents.split("\n")
+    print("OUTPUT %s" % (new))
+
