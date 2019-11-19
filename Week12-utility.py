@@ -11,7 +11,7 @@ def LoadFile(filename):
     bruh = open(filename, "r")
     contents = bruh.read()
     new = contents.split("\n")
-    print("OUTPUT %s" % (new))
+    return new
 
 
 def UpdateString(string1, string2, index_int):
@@ -36,7 +36,7 @@ def FindWordCount(list1, string1):
     for val in new_list1:
         if new_string1 in val:
             count += 1
-    print("OUTPUT %d" % (count))
+    return count
     
 
 def ScoreFinder(list1, list2, string):
@@ -66,7 +66,7 @@ def Union(list1, list2):
             continue
         else:
             new_list.append(val)
-    print(new_list)
+    return new_list
 
 
 def Intersection(list1, list2):
@@ -76,5 +76,14 @@ def Intersection(list1, list2):
             new_list.append(val)
         else:
             continue
-    print(new_list)
+    return new_list
 
+
+def NotIn(list1, list2):
+    new_list = []
+    for val in list1:
+        if val not in list2:
+            new_list.append(val)
+        else:
+            continue
+    return new_list
