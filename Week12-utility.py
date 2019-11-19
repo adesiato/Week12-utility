@@ -54,3 +54,17 @@ def ScoreFinder(list1, list2, string):
         print("OUTPUT %s got a score of %s" % (list1[score_index], score))
     else:
         print("OUTPUT player not found")
+
+
+def Union(list1, list2):
+    combined = list1 + list2
+    new_list = []
+    count = 1
+
+    for val in combined:
+        if val in new_list:
+            continue
+        else:
+            new_list.append(val)
+    
+    print(new_list)
