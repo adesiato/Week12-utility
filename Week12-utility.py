@@ -2,14 +2,17 @@
 # CSCI 102 - Section A
 # Week 12 - Lab A
 
+
 def PrintOutput(string):
     print("OUTPUT %s" % (string))
+
 
 def LoadFile(filename):
     bruh = open(filename, "r")
     contents = bruh.read()
     new = contents.split("\n")
     print("OUTPUT %s" % (new))
+
 
 def UpdateString(string1, string2, index_int):
     list_1 = []
@@ -19,8 +22,22 @@ def UpdateString(string1, string2, index_int):
     new_string = ""
     print("OUTPUT %s" % (new_string.join(list_1)))
 
+
 def FindWordCount(list1, string1):
-    pass
+    new_list1 = []
+    new_string1 = ""
+
+    for val in list1:
+        new_list1.append(val.lower())
+
+    new_string1 = string1.lower()
+
+    count = 0
+    for val in new_list1:
+        if new_string1 in val:
+            count += 1
+    print("OUTPUT %d" % (count))
+    
 
 def ScoreFinder(list1, list2, string):
     new_list1 = []
