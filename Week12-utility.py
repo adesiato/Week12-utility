@@ -66,5 +66,15 @@ def Union(list1, list2):
             continue
         else:
             new_list.append(val)
-    
     print(new_list)
+
+
+def Intersection(list1, list2):
+    new_list = []
+    for val in list1:
+        if val in list2:
+            new_list.append(val)
+        else:
+            continue
+    print(new_list)
+
