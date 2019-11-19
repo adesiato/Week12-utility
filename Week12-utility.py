@@ -19,5 +19,21 @@ def UpdateString(string1, string2, index_int):
     new_string = ""
     print("OUTPUT %s" % (new_string.join(list_1)))
 
+def FindWordCount(list1, string1):
+    pass
 
+def ScoreFinder(list1, list2, string):
+    new_list1 = []
+    new_string = ""
+    
+    for name in list1:
+        new_list1.append(name.lower())
+        
+    new_string = string.lower()
 
+    if new_string in new_list1:
+        score_index = new_list1.index(new_string)
+        score = str(list2[score_index])
+        print("OUTPUT %s got a score of %s" % (list1[score_index], score))
+    else:
+        print("OUTPUT player not found")
