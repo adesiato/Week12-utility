@@ -1,7 +1,12 @@
 # Anthony Desiato
 # CSCI 102 - Section A
 # Week 12 - Lab A
+# https://github.com/adesiato/Week12-utility
 
+'''
+Had some trouble getting Git Bash to work initially, so there are more than 9 commits in the repository's history.
+Look at 9-10 most recent commits for specific additions of functions.
+'''
 
 def PrintOutput(string):
     print("OUTPUT %s" % (string))
